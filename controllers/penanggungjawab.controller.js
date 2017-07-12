@@ -7,7 +7,7 @@ var express = require('express'),
 	Peserta = sequelize.import(__dirname + '/../models/peserta.model'),
 	storage = multer.diskStorage({
 	    destination: function (req, file, callback) {
-	        callback(null, 'dist/img/assets');
+	        callback(null, 'dist/assets/img');
 	    },
 	    filename: function (req, file, callback) {
 	    let ext = path.extname(file.originalname);
