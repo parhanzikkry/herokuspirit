@@ -4,7 +4,11 @@
   "description": "Backend dari website spirit 2018",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node bin/www"
+  },
+  "engines": {
+    "node": "7.7.3",
+    "npm": "4.1.2"
   },
   "author": "Spirit_PSBO_TEAM",
   "license": "ISC",
