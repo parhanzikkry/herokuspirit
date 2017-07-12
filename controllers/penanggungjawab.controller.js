@@ -121,8 +121,8 @@ class PJ {
 									console.log("masuk ke false loh")
 									Peserta.sync().then(()=> {
 										Peserta.create({
-											photodiri_peserta:data.files[0].path,
-											photoKTM_peserta:data.files[1].path,
+											photodiri_peserta:data.files[0].filename,
+											photoKTM_peserta:data.files[1].filename,
 											noHP_peserta:data.body.noHp,
 											fk_lombaId:data.body.idLomba,
 											fk_mahasiswaId:MHS.dataValues.id
