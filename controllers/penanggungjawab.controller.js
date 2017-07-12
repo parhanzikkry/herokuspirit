@@ -226,8 +226,8 @@ class PJ {
 				attributes: ['fk_mahasiswaId']
 			}).then((idmahasiswa) => {
 				Peserta.update({
-					photodiri_peserta: data.files[0].path,
-					photoKTM_peserta: data.files[1].path,
+					photodiri_peserta: data.files[0].filename,
+					photoKTM_peserta: data.files[1].filename,
 					noHP_peserta: data.body.noHp
 				},{
 					where: {
