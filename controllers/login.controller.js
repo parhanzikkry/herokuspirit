@@ -19,7 +19,7 @@ class Login{
 	}
 	/*fungsi hashing password*/
 	setPassword(data){
-		this.password = crypto.createHash('md5').update(data).digest('hex');
+		this.password = data /*crypto.createHash('md5').update(data).digest('hex')*/;
 	}
 	login(data, res){
 		this.username = data.username;
